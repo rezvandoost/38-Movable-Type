@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'aviny';
+    src: url('../fonts/aviny.eot');
+    src: url('../fonts/aviny.woff2') format('woff2'), url('../fonts/aviny.woff') format('woff'), url('../fonts/aviny.ttf') format('truetype');
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: 'aviny';
+    direction: rtl;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/city\ 1.jpg');
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    /*background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/city\ 1.jpg');*/
+    /* doesn't work here? */
+}
+
+h1 {
+    color:#fff;
+    font-size: 4rem;
+    position: absolute;
+    top: 20vh;
+    right: 30vw;
+}
+
+h1 span {
+    color:orange;
+    font-size: 3.5rem;
+}
+
+h1 span::after {
+    content:'';
+    color: orange;
+    border-right: 4px solid;
+    margin-right: 8px;
+    font-size: 2.5rem;
+    animation: blink 0.5s infinite ease;
+    -webkit-animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h2 {
+    color:#fff;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 20vh;/* as the same of h1*/
+    right: 30vw;/* as the same of h1*/
+    margin-top: 15vh;/* to have space between h1 & h2*/
+}
+
